@@ -23,7 +23,7 @@ MongoClient.connect('mongodb://localhost:27017/logApp', (err,db)=>{
     });*/
 
     db.collection('Users').find({
-        "user.name": 'Metehan Öner'
+        "user.name": 'Metehan'
     }).toArray().then((docs) => {
         console.log(JSON.stringify(docs, undefined, 2));
     });
