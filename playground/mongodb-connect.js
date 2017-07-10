@@ -1,7 +1,7 @@
 //const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb');
 
-MongoClient.connect('mongodb://localhost:27017/logApp', (err,db)=>{
+MongoClient.connect('mongodb://localhost:27017/lApp', (err,db)=>{
     if(err){
         return console.log('Unable to connect to MongoDB server');
     }
@@ -13,10 +13,7 @@ MongoClient.connect('mongodb://localhost:27017/logApp', (err,db)=>{
             userName: String,
             name: String,
             profilePicture: String,
-            currentLocation: {
-                latitude: 0,
-                longtitude: 0
-            }
+
         },
 
         }, (err, result) => {
